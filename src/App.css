@@ -1,0 +1,45 @@
+.hover-div:hover {
+    color: #f91880;
+    &:nth-child(1) {
+        padding: 1rem;
+        border-radius: 100%;
+        background-color: #f918810a;
+    }
+}
+
+.span-animation {
+    position: absolute;
+    z-index: 10;
+    border-radius: 100%;
+    animation: spanCircle 0.2s;
+    scale: 1.5;
+}
+
+@keyframes spanCircle {
+    20% {
+        width: 1px;
+        height: 1px;
+        background-color: #f91880;
+    }
+    40% {
+        width: 19px;
+        height: 19px;
+        background-color: #dd4688;
+    }
+    60% {
+        width: 30px;
+        height: 30px;
+        background-color: #d46abf;
+    }
+    80% {
+        width: 34px;
+        height: 34px;
+        background-color: #cc8ef5;
+    }
+    100% {
+        width: 38px;
+        height: 38px;
+        border: 8px solid #c2b3ff;
+        background-color: transparent;
+    }
+}
